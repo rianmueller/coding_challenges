@@ -1,6 +1,15 @@
 // Function -  FirstFactorial(num)
 // The function will take the num parameter being passed and return the factorial of it (ie. if num =3, return(3 * 2 * 1)).  For test cases, the range will be between 1 and 18.
 
+function factorial(num){
+    var total = 1;
+    for (i = 0; i < num; i++){
+        total = total * (num - i);
+    };
+    console.log(total);
+}
+factorial(18);
+
 // Function - SimpleAdding(num)
 // The function will take the num parameter and add up all the numbers from 1 to num.  For test cases, the parameter num will be any number from 1 to 1000.
 
