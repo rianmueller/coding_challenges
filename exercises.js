@@ -13,6 +13,15 @@ factorial(18);
 // Function - SimpleAdding(num)
 // The function will take the num parameter and add up all the numbers from 1 to num.  For test cases, the parameter num will be any number from 1 to 1000.
 
+function simpleAdding(num){
+    var total = 0;
+    for (i = 0; i < num + 1; i++){
+        total = total + i;
+    };
+    console.log(total);
+}
+simpleAdding(6);
+
 // Function - LetterCapitalize(str)
 // The function will take the str parameter being passed and capitalize the first letter of each word.  Words will be separated by only one space.
 
