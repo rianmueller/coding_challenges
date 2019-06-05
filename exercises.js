@@ -67,6 +67,18 @@ rangeRover([6, 1]);
 // Function missingLetter(str)
 // The function will find the missing letter passed in the parameter and return it.  If all letters are present in the string, the return will be undefined.  For example missingLetter("abce") should return "d", missingLetter("bcd") should return undefined.
 
+function missingLetter(str){
+    for(var i = 0; i < str.length; i++){
+        var letter = str.charCodeAt(i);
+        if (letter !== str.charCodeAt(0) + i){
+            return String.fromCharCode(letter - 1);
+        }  
+    }
+    return undefined;
+  }
+  console.log('missingLetter(\'abce\'): ' + missingLetter("abce"));
+  console.log('missingLetter(\'bcd\'): ' + missingLetter("bcd"));
+
 // Function hailCaesar(num)
 // The function will take the num parameter and convert the given number into a roman numeral.  For example hailCaesar(2) should return "II", hailCaesar(5) should return "V".
 
